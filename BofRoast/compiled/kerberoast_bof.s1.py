@@ -4,7 +4,7 @@ from outflank_stage1.task.base_bof_task import BaseBOFTask
 from outflank_stage1.task.enums import BOFArgumentEncoding
 
 
-class NanorobeusBOF(BaseBOFTask):
+class BofRoastBOF(BaseBOFTask):
     def __init__(self):
         super().__init__("BofRoast", base_binary_name="kerberoast")
 
