@@ -6,12 +6,12 @@ from outflank_stage1.task.enums import BOFArgumentEncoding
 
 class BofRoastBOF(BaseBOFTask):
     def __init__(self):
-        super().__init__("BofRoast", base_binary_name="kerberoast")
+        super().__init__("bof_roast", base_binary_name="kerberoast")
 
         self.parser.description = (
             "Kerberoast a given Service Principal"
         )
-        self.parser.epilog = "Usage: BofRoast <spn>"
+        self.parser.epilog = "Usage: bof_roast <spn>"
 
         self.parser.add_argument(
             "spn",
